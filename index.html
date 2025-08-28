@@ -1,6 +1,14 @@
+<p>
+  CBQ Site (Original & Modified Body code)
+    <br />
+    <br />
+    <br />
+    <br />
+    <br />
+</p>
 
 <head>
-  
+<!-- ---------------------------------------------------------------------------------- -->
 <!-- Signals Gateway Pixel Code -->
     <script>
     !function(a,h,e,v,n,t,s){
@@ -9,12 +17,73 @@
       if(!a._cbq)a._cbq=n;
       n.push=n;n.loaded=!0;n.version='2.0';n.queue=[];
       t=h.createElement(e);t.async=!0; t.src=v;s=h.getElementsByTagName(e)[0];s.parentNode.insertBefore(t,s);
-    }(window, document,'script', 'https://web.agency-d167c6rdq1lc70.luisg.cbinternal.com/sdk/4742259715093663199/events.js');
-    cbq('setHost', 'https://agency-d167c6rdq1lc70.luisg.cbinternal.com/');
-    cbq('init', '4742259715093663199');
+    }(window, document,'script', 'https://ggonzalez63924-ejm5xg56sq-uc.a.run.app/sdk/1800528302078864575/events.js');
+    cbq('setHost', 'https://ggonzalez63924-ejm5xg56sq-uc.a.run.app/');
+    cbq('init', '1800528302078864575');
     </script>
   <!-- End Signals Gateway Pixel Code -->
-  
+<!-- Signals Gateway Pixel Code -->
+    <script>
+    !function(a,h,e,v,n,t,s){
+      if(a.cbq)return;
+      n=a.cbq=function(){n.callMethod ? n.callMethod.apply(n,arguments) : n.queue.push(arguments);};
+      if(!a._cbq)a._cbq=n;
+      n.push=n;n.loaded=!0;n.version='2.0';n.queue=[];
+      t=h.createElement(e);t.async=!0; t.src=v;s=h.getElementsByTagName(e)[0];s.parentNode.insertBefore(t,s);
+    }(window, document,'script', 'https://ggonzalez63924-ejm5xg56sq-uc.a.run.app/sdk/6089769467407267028/events.js');
+    cbq('setHost', 'https://ggonzalez63924-ejm5xg56sq-uc.a.run.app/');
+    cbq('init', '6089769467407267028');
+    </script>
+  <!-- End Signals Gateway Pixel Code -->
+
+<!-- ---------------------------------------------------------------------------------- -->
+<!-- Modified CBQ body Code -->
+<meta name="facebook-domain-verification" content="qowwrhpyni79cf2pms3zixyrxoh3b4" />
+<title>pixel test page</title>
+</head>
+<body> 
+<h2>pixel test page</h2>
+<div><ul>
+  <li><button id="addToWishlistButton" type="button">Add to Wishlist (x10)</button></li>
+  <li><button id="addToCartButton" type="button">Add to Cart (x10)</button></li>
+  <li><button id="checkoutButton" type="button">Check Out (x10)</button></li>
+  <li><button id="purchaseButton" type="button">Purchase (x10)</button></li>
+  <li><button id="subcribeButton" type="button">Subscribe (x10)</button></li>
+  <li><button id="registrationButton" type="button">Registration (x10)</button></li>
+</ul></div>
+<div><ul>
+  <li><button id="siteButton" type="button">Site 9 (x10)</button></li>
+  <li><button id="invalidpurchaseButton" type="button">Invalid Purchase (x10)</button></li>
+  <li><button id="searchButton" type="button">Search (x10)</button></li>
+  <li><button id="contactButton" type="button">Contact (x10)</button></li>
+  <li><button id="donateButton" type="button">Donate (x10)</button></li>
+  <li><button id="rateButton" type="button">Rate (x10)</button></li>
+  <li><button id="adClickButton" type="button">AdClick (x10)</button></li>
+  <li><button id="purchaseNoValueButton" type="button">Purchase With No Value (x10)</button></li>
+</ul></div>
+<script type="text/javascript">
+  for(var i = 0; i < 10; i++) {
+document.getElementById('addToWishlistButton').addEventListener('click', function() {cbq('track', 'AddToWishlist'); }, false);
+document.getElementById('addToCartButton').addEventListener('click', function() {cbq('track', 'AddToCart');}, false);
+document.getElementById('checkoutButton').addEventListener('click', function() {cbq('track', 'InitiateCheckout');}, false);
+document.getElementById('purchaseButton').addEventListener('click', function() {cbq('track', 'Purchase', {value: '12.34',currency: 'USD',});}, false);
+document.getElementById('subcribeButton').addEventListener('click', function() {cbq('track', 'Subscribe');}, false);
+document.getElementById('registrationButton').addEventListener('click', function() {cbq('track', 'CompleteRegistration');}, false);
+document.getElementById('siteButton').addEventListener('click', function() {cbq('track', 'Site9')}, false);
+document.getElementById('invalidpurchaseButton').addEventListener('click', function() {cbq('track', 'Purchase', {value: 'fdsjflds',currency: 'USD',});}, false);
+document.getElementById('searchButton').addEventListener('click', function() {cbq('track', 'Search'); }, false);    
+document.getElementById('contactButton').addEventListener('click', function() {cbq('track', 'Contact'); }, false);    
+document.getElementById('donateButton').addEventListener('click', function() {cbq('track', 'Donate'); }, false);    
+document.getElementById('rateButton').addEventListener('click', function() {cbq('track', 'Rate'); }, false);    
+document.getElementById('adClickButton').addEventListener('click', function() {cbq('track', 'AdClick'); }, false);
+document.getElementById('purchaseNoValueButton').addEventListener('click', function() {cbq('track', 'Purchase', {currency: 'USD',});}, false);
+}
+</script>
+</body>
+
+<!-- ---------------------------------------------------------------------------------- -->
+<!-- Original CBQ body Code -->
+<!-- 
 <meta name="facebook-domain-verification" content="qowwrhpyni79cf2pms3zixyrxoh3b4" />
 <title>pixel test page</title>
 </head>
@@ -28,14 +97,10 @@
         <li><button id="purchaseButton" type="button">Purchase</button></li>
         <li><button id="subcribeButton" type="button">Subscribe</button></li>
         <li><button id="registrationButton" type="button">Registration</button></li>
-
-
-      
     </ul>
     </div>
-<script type="text/javascript">
-
   
+<script type="text/javascript">
 document.getElementById('addToWishlistButton').addEventListener('click', function() {
   cbq('track', 'AddToWishlist');
 }, false);
@@ -50,7 +115,7 @@ document.getElementById('checkoutButton').addEventListener('click', function() {
 
 document.getElementById('purchaseButton').addEventListener('click', function() {
   cbq('track', 'Purchase', {
-    value: 'fdsjflds',
+    value: '100',
     currency: 'USD',
   });
 }, false);
@@ -65,3 +130,5 @@ document.getElementById('registrationButton').addEventListener('click', function
 
 </script>
 </body>
+-->
+<!-- ---------------------------------------------------------------------------------- -->
